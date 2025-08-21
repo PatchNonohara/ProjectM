@@ -8,6 +8,9 @@ using static UnityEngine.Rendering.DebugUI;
 public class RoomScript : MonoBehaviour
 {
     public GameObject RoomTemplate;
+    public GameObject RoomTemplateRight;
+    public GameObject RoomTemplateForward;
+    public GameObject RoomTemplateLeftAndRight;
     private GameObject currentRoom;
     public void PlaceRoom()
     {
