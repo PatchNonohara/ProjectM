@@ -3,6 +3,10 @@ using UnityEngine;
 public class RoomGenerator : MonoBehaviour
 {
     public GameObject RoomTemplate;
+    public GameObject RoomTemplateRight;
+    public GameObject RoomTemplateForward;
+    public GameObject RoomTemplateLeftAndRight;
+   
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
