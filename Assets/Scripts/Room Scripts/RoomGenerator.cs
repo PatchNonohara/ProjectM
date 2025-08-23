@@ -21,17 +21,17 @@ public class RoomGenerator : MonoBehaviour
             GlobalRoomData.RoomIDincr++;
             GlobalRoomData.RoomID.Add("Room" + GlobalRoomData.RoomIDincr);
             Debug.Log("Room IDS Made:" + GlobalRoomData.RoomIDincr);
-     
-
-            List<Vector3> Directions = new List<Vector3> { currentRoomPos + RoomTemplate.transform.forward * roomLength, currentRoomPos + RoomTemplate.transform.right * roomLength, currentRoomPos - RoomTemplate.transform.right * roomLength };
-
-            Debug.Log("Added" + GlobalRoomData.RoomID[GlobalRoomData.RoomIDincr - 1] + " position is: " + currentRoomPos + " rotation is: " + currentRoomRot);
-
             //Adds respective RoomID and their Global positions into a dict
             GlobalRoomData.RoomRotations.Add("Room" + GlobalRoomData.RoomIDincr, currentRoomRot);
             GlobalRoomData.RoomPositions.Add("Room" + GlobalRoomData.RoomIDincr, currentRoomPos);
 
             Debug.Log("Rooms in Dictionary RoomPositions:" + GlobalRoomData.RoomPositions.Count);
+
+            List<Vector3> Directions = new List<Vector3> { currentRoomPos + RoomTemplate.transform.forward * roomLength, currentRoomPos + RoomTemplate.transform.right * roomLength, currentRoomPos - RoomTemplate.transform.right * roomLength };
+
+          
+
+  
 
             //values for next room       ---------------- NEXT ROOM DETAILS -------------------------------
 
